@@ -4,26 +4,23 @@ import "./Weather.css";
 
 export default function Weather() {
   let city = "New York";
-  const [loaded, setLoaded] = useState("");
-  const [weather, setWeather] = useState("");
+
+  const [weather, setWeather] = useState({ loaded: false });
 
   function showWeather(response) {
-    console.log(response.data);
-    setLoaded(true);
-
     setWeather({
+      loaded: true,
+      date: "Sunday",
       temp: response.data.main.temp,
-      precipitation: response.data.main.precipitation,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
       name: response.data.name,
-
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
-  if (loaded) {
+  if (weather.loaded) {
     return (
       <div className="Weather">
         <form>
@@ -46,17 +43,17 @@ export default function Weather() {
         </form>
         <h1>{weather.name}</h1>
         <ul>
-          <li>Sunday 2:15pm</li>
-          <li>{weather.description}</li>
+          <li>{weather.date}</li>
+          <li className="text-capitalize">{weather.description}</li>
         </ul>
 
         <div className="row">
           <div className="col-6">
             <div className="clearfix mt-3">
               <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                src={weather.icon}
                 alt="mostly cloudy"
-                className="float-left"
+                className={weather.description}
               />
               <span className="temperature float-left">
                 {Math.round(weather.temp)}
@@ -66,7 +63,6 @@ export default function Weather() {
           </div>
           <div className="col-6">
             <ul className="mt-3">
-              <li>Precipitation: </li>
               <li>Humidity: {weather.humidity}%</li>
               <li>Wind: {Math.round(weather.wind)} mph</li>
             </ul>
@@ -144,7 +140,7 @@ export default function Weather() {
     );
   } else {
     const apiKey = "210f0105830dab42da6932b5c4b52fc7";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(showWeather);
 
     return <h1>Loading...</h1>;
