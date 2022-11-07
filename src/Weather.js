@@ -63,7 +63,8 @@ export default function Weather(props) {
           <div className="col-2">
             <ul>
               <li>Mon</li>
-              <li>62 °F</li>
+
+              <li>62° F</li>
               <ReactAnimatedWeather
                 icon="CLEAR_DAY"
                 color="black"
