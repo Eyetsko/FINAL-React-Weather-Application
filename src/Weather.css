@@ -25,9 +25,9 @@
   font-weight: 100;
   list-style: none;
 }
-.Weather img {
+.Weather canvas {
   height: 64px;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -36,6 +36,8 @@
   font-weight: bold;
   font-size: 64px;
   line-height: 64px;
+  position: relative;
+  top: -40px;
 }
 
 .Weather .unit {
@@ -44,6 +46,6 @@
   line-height: 1;
   font-weight: 400;
   position: relative;
-  top: -32px;
+  top: -70px;
   margin-left: 5px;
 }

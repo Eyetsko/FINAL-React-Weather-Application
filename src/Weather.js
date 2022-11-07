@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
-import ReactAnimatedWeather from "react-animated-weather";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -17,7 +16,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
       name: response.data.name,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
     });
   }
 
@@ -52,7 +51,7 @@ export default function Weather(props) {
               <input
                 type="submit"
                 value="search"
-                className="btn btn-primary w-100"
+                className="btn btn-dark w-100"
               />
             </div>
           </div>
