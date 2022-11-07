@@ -25,18 +25,14 @@
   font-weight: 100;
   list-style: none;
 }
-.Weather canvas {
-  margin-right: 20px;
-  margin-bottom: 30px;
-  display: inline-block;
-}
+
 .Weather .temperature {
   color: black;
   font-weight: bold;
   font-size: 64px;
   line-height: 64px;
   position: relative;
-  top: -40px;
+  top: -10px;
 }
 
 .Weather .unit {
@@ -45,7 +41,7 @@
   line-height: 1;
   font-weight: 400;
   position: relative;
-  top: -70px;
+  top: -40px;
   margin-left: 5px;
 }
 .Weather a {
