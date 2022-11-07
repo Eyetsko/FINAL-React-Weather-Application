@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import ReactAnimatedWeather from "react-animated-weather/build/ReactAnimatedWeather";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -63,9 +64,11 @@ export default function Weather(props) {
             <ul>
               <li>Mon</li>
               <li>62 °F</li>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="mostly cloudy"
+              <ReactAnimatedWeather
+                icon="CLEAR_DAY"
+                color="black"
+                size={40}
+                animate={true}
               />
             </ul>
           </div>
@@ -74,9 +77,11 @@ export default function Weather(props) {
             <ul>
               <li>Mon</li>
               <li>62 °F</li>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="mostly cloudy"
+              <ReactAnimatedWeather
+                icon="CLEAR_DAY"
+                color="black"
+                size={40}
+                animate={true}
               />
             </ul>
           </div>
@@ -85,9 +90,11 @@ export default function Weather(props) {
             <ul>
               <li>Mon</li>
               <li>62 °F</li>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="mostly cloudy"
+              <ReactAnimatedWeather
+                icon="CLEAR_DAY"
+                color="black"
+                size={40}
+                animate={true}
               />
             </ul>
           </div>
@@ -96,9 +103,11 @@ export default function Weather(props) {
             <ul>
               <li>Mon</li>
               <li>62 °F</li>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="mostly cloudy"
+              <ReactAnimatedWeather
+                icon="CLEAR_DAY"
+                color="black"
+                size={40}
+                animate={true}
               />
             </ul>
           </div>
@@ -107,9 +116,11 @@ export default function Weather(props) {
             <ul>
               <li>Mon</li>
               <li>62 °F</li>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="mostly cloudy"
+              <ReactAnimatedWeather
+                icon="CLEAR_DAY"
+                color="black"
+                size={40}
+                animate={true}
               />
             </ul>
           </div>
@@ -118,9 +129,11 @@ export default function Weather(props) {
             <ul>
               <li>Mon</li>
               <li>62 °F</li>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="mostly cloudy"
+              <ReactAnimatedWeather
+                icon="CLEAR_DAY"
+                color="black"
+                size={40}
+                animate={true}
               />
             </ul>
           </div>
