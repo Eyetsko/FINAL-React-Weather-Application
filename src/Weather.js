@@ -18,6 +18,8 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       name: response.data.name,
       icon: response.data.weather[0].icon,
+      longitude: response.data.coord.lon,
+      latitude: response.data.coord.lat,
     });
   }
 
@@ -58,7 +60,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo info={weather} />
-        <WeatherForecast />
+        <WeatherForecast lat={weather.latitude} lon={weather.longitude} />
       </div>
     );
   } else {
