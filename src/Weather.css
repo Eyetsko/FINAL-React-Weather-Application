@@ -44,16 +44,3 @@
   top: -40px;
   margin-left: 5px;
 }
-.Weather a {
-  text-decoration: none;
-}
-.Weather .celsius {
-  color: black;
-}
-.Weather .celsius:hover {
-  color: rgb(6, 6, 250);
-}
-
-.Weather .farenheit:hover {
-  color: black;
-}
