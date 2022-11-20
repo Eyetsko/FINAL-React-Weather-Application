@@ -2,7 +2,7 @@
   border: 1px solid gray;
   padding: 16px;
 
-  border-radius: 4px;
+  border-radius: 10px;
 }
 .Weather form {
   margin-bottom: 20px;
@@ -41,6 +41,6 @@
   line-height: 1;
   font-weight: 400;
   position: relative;
-  top: -40px;
+  top: -35px;
   margin-left: 5px;
 }

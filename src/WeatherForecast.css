@@ -1,6 +1,9 @@
 .WeatherForecast {
   text-align: center;
 }
+.WeatherForecast-day {
+  margin-bottom: 10px;
+}
 .WeatherForecast-temp-min {
   opacity: 0.5;
 }
