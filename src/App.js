@@ -9,7 +9,13 @@ export default function App() {
         <footer>
           <div>
             This project was coded by Emily Yetsko and is{" "}
-            <a href="https://github.com/Eyetsko/test">open-sourced on Github</a>
+            <a
+              href="https://github.com/Eyetsko/test"
+              target="_blank"
+              rel="noreferrer"
+            >
+              open-sourced on Github
+            </a>
           </div>
         </footer>
       </div>
